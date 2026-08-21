@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-08-21T21:09:55.000Z",
+  "year": 2026,
+  "user": {"login":"Vasysik","name":"Amadeus Vasysik","url":"https://github.com/Vasysik","repositories":45,"followers":5},
+  "totals": {"contributions":392,"commits":0,"pullRequests":0,"issues":0,"reviews":0,"restricted":0,"stars":31,"forks":32},
+  "divergence":"1.048596",
+  "calendar":[],
+  "languages":[
+    {"name":"Python","bytes":100,"percent":72.0},
+    {"name":"TypeScript","bytes":24,"percent":17.3},
+    {"name":"JavaScript","bytes":9,"percent":6.5},
+    {"name":"Other","bytes":6,"percent":4.2}
+  ],
+  "repositories":[
+    {"name":"yt-dlp-host","url":"https://github.com/Vasysik/yt-dlp-host","description":"Simple dockerized API to work with yt-dlp from your server anywhere","stars":30,"forks":32,"language":"Python"},
+    {"name":"yt-dlp-host-api","url":"https://github.com/Vasysik/yt-dlp-host-api","description":"A simple python library for sending requests to your yt-dlp-host API","stars":1,"forks":0,"language":"Python"},
+    {"name":"repotxt","url":"https://github.com/Vasysik/repotxt","description":"VS Code extension for repository analysis","stars":0,"forks":0,"language":"TypeScript"}
+  ]
+}
