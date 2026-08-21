@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="196" viewBox="0 0 920 196" role="img" aria-label="Vasysik time leap signal (light)">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="214" viewBox="0 0 920 214" role="img" aria-label="Vasysik time leap signal (light)">
   <title>Vasysik time leap signal (light)</title>
-  <rect width="920" height="196" rx="10" fill="#f3f0e7"/>
-  <rect x="0.5" y="0.5" width="919" height="195" rx="9.5" fill="none" stroke="#746c57"/>
+  <rect width="920" height="214" rx="10" fill="#f3f0e7"/>
+  <rect x="0.5" y="0.5" width="919" height="213" rx="9.5" fill="none" stroke="#746c57"/>
   <style>
     .m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
     .label{font-size:11px;letter-spacing:1.35px}
