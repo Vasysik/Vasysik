@@ -126,7 +126,7 @@ function renderHero(data, mode) {
   const repo=data.repositories[0] || {name:'—',language:'—',stars:0,forks:0};
   let s=svgStart(W,H,c,`Vasysik profile observation record (${mode})`);
   // restrained frame / reference marks
-  s += `<path d="M22 35H360 M560 35H898" stroke="${c.hair}"/><text x="22" y="25" fill="${c.muted}" class="m label">OBSERVATION RECORD / 004</text>`;
+  s += `<path d="M22 35H360 M430 35H898" stroke="${c.hair}"/><text x="22" y="25" fill="${c.muted}" class="m label">OBSERVATION RECORD / 004</text>`;
   s += `<text x="22" y="79" fill="${c.phosphor}" class="m" font-size="31" font-weight="700">VASYSIK</text>`;
   s += `<text x="22" y="102" fill="${c.muted}" class="m small">github.com/Vasysik  ·  EL PSY KONGROO</text>`;
   const metrics=[['REPOS',data.user.repositories],['FOLLOWERS',data.user.followers],['STARS',data.totals.stars],['FORKS',data.totals.forks]];
@@ -137,18 +137,39 @@ function renderHero(data, mode) {
   }
   s += `<text x="22" y="196" fill="${c.muted}" class="m small">signal: ${esc(repo.name)}  /  ${esc(repo.language)}  /  ★ ${fmt(repo.stars)}  /  fork ${fmt(repo.forks)}</text>`;
 
-  s += `<text x="558" y="25" fill="${c.muted}" class="m label">WORLD LINE / ACTIVITY HASH</text>`;
-  const chars=[...data.divergence]; let dx=558;
+  const meterLeft = 430;
+  const meterRight = 898;
+  s += `<text x="${meterLeft}" y="25" fill="${c.muted}" class="m label">WORLD LINE / ACTIVITY HASH</text>`;
+
+  // The divergence string can change length. Fit the whole Nixie bank into the
+  // right half of the card instead of using a fixed x position.
+  const chars=[...data.divergence];
+  const units=chars.reduce((sum,ch)=>sum+(ch==='.' ? 0.42 : 1),0);
+  const available=meterRight-meterLeft;
+  const step=Math.min(49, available/Math.max(units,1));
+  const dotAdvance=step*0.42;
+  const boxW=Math.max(28, step-6);
+  const boxH=74;
+  const fontSize=Math.min(42, boxW*0.98);
+  const totalAdvance=chars.reduce((sum,ch)=>sum+(ch==='.' ? dotAdvance : step),0);
+  let dx=meterRight-totalAdvance;
+
   for(const ch of chars){
-    if(ch==='.') { s += `<circle cx="${dx+7}" cy="105" r="3" fill="${c.hot}"/>`; dx += 22; continue; }
-    s += `<rect x="${dx}" y="56" width="43" height="74" rx="6" fill="${c.panel}" stroke="${c.line}"/>`;
-    s += `<line x1="${dx+7}" y1="66" x2="${dx+36}" y2="66" stroke="${c.hair}"/><line x1="${dx+7}" y1="120" x2="${dx+36}" y2="120" stroke="${c.hair}"/>`;
-    s += `<text x="${dx+21.5}" y="109" text-anchor="middle" fill="${c.hot}" class="m" font-size="42">${ch}</text>`;
-    dx += 49;
+    if(ch==='.') {
+      s += `<circle cx="${(dx+dotAdvance/2).toFixed(2)}" cy="105" r="3" fill="${c.hot}"/>`;
+      dx += dotAdvance;
+      continue;
+    }
+    const innerLeft=dx+Math.max(5,boxW*0.16);
+    const innerRight=dx+boxW-Math.max(5,boxW*0.16);
+    s += `<rect x="${dx.toFixed(2)}" y="56" width="${boxW.toFixed(2)}" height="${boxH}" rx="6" fill="${c.panel}" stroke="${c.line}"/>`;
+    s += `<line x1="${innerLeft.toFixed(2)}" y1="66" x2="${innerRight.toFixed(2)}" y2="66" stroke="${c.hair}"/><line x1="${innerLeft.toFixed(2)}" y1="120" x2="${innerRight.toFixed(2)}" y2="120" stroke="${c.hair}"/>`;
+    s += `<text x="${(dx+boxW/2).toFixed(2)}" y="109" text-anchor="middle" fill="${c.hot}" class="m" font-size="${fontSize.toFixed(1)}">${ch}</text>`;
+    dx += step;
   }
-  s += `<text x="558" y="154" fill="${c.muted}" class="m small">derived from public activity · visual identifier</text>`;
-  s += `<text x="558" y="178" fill="${c.text}" class="m body">${fmt(data.totals.contributions)} contributions / ${data.year}</text>`;
-  s += `<text x="558" y="197" fill="${c.muted}" class="m small">updated ${esc(data.generatedAt.slice(0,16).replace('T',' '))} UTC</text>`;
+  s += `<text x="${meterLeft}" y="154" fill="${c.muted}" class="m small">derived from public activity · visual identifier</text>`;
+  s += `<text x="${meterLeft}" y="178" fill="${c.text}" class="m body">${fmt(data.totals.contributions)} contributions / ${data.year}</text>`;
+  s += `<text x="${meterLeft}" y="197" fill="${c.muted}" class="m small">updated ${esc(data.generatedAt.slice(0,16).replace('T',' '))} UTC</text>`;
   return s + `</svg>`;
 }
 
