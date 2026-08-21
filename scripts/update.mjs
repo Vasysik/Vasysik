@@ -291,7 +291,7 @@ function renderActivity(data, mode) {
 }
 
 function renderWave(data, mode) {
-  const c = theme(mode), W = 920, H = 196;
+  const c = theme(mode), W = 920, H = 214;
   let s = svgStart(W, H, c, `Vasysik time leap signal (${mode})`);
   s += `<text x="22" y="27" fill="${c.muted}" class="m label">COMMIT FREQUENCY / TIME LEAP SIGNAL</text>`;
   s += `<text x="898" y="27" text-anchor="end" fill="${c.muted}" class="m small">smoothed daily contributions</text>`;
