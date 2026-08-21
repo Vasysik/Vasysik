@@ -281,10 +281,6 @@ function renderActivity(data, mode) {
   const labelX = Math.max(22, x0 - 26);
   s += `<text x="${labelX}" y="76" fill="${c.muted}" class="m small">M</text><text x="${labelX}" y="102" fill="${c.muted}" class="m small">W</text><text x="${labelX}" y="128" fill="${c.muted}" class="m small">F</text>`;
 
-  const rangeFrom = new Date(data.range?.from || data.generatedAt);
-  const rangeTo = new Date(data.range?.to || data.generatedAt);
-  const fmtMonthDay = d => d.toLocaleString('en', { month: 'short', day: 'numeric', timeZone: 'UTC' });
-  s += `<text x="22" y="163" fill="${c.muted}" class="m small">range: ${fmtMonthDay(rangeFrom)} → ${fmtMonthDay(rangeTo)}</text>`;
 
   const langs = data.languages?.slice(0, 5) || [];
   const ly = 203, barX = 22, barW = 876, barH = 11;
