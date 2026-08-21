@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-21T23:05:53.384Z",
+  "generatedAt": "2026-08-21T23:15:28.092Z",
   "year": 2026,
   "range": {
-    "from": "2025-08-21T23:05:53.000Z",
-    "to": "2026-08-21T23:05:53.384Z"
+    "from": "2025-08-21T23:15:28.000Z",
+    "to": "2026-08-21T23:15:28.092Z"
   },
   "user": {
     "login": "Vasysik",
@@ -2225,34 +2225,34 @@
     {
       "name": "Python",
       "bytes": 394069,
-      "percent": 36.9636056655098
+      "percent": 36.97640398937443
     },
     {
       "name": "JavaScript",
-      "bytes": 221008,
-      "percent": 20.730513085076446
+      "bytes": 220639,
+      "percent": 20.703066721339624
     },
     {
       "name": "Java",
       "bytes": 170731,
-      "percent": 16.014538973829847
+      "percent": 16.02008386731736
     },
     {
       "name": "TypeScript",
       "bytes": 126426,
-      "percent": 11.858737454272582
+      "percent": 11.86284343797825
     },
     {
       "name": "Kotlin",
       "bytes": 56275,
-      "percent": 5.278585498546103
+      "percent": 5.280413162420912
     }
   ],
   "repositories": [
     {
       "name": "yt-dlp-host",
       "url": "https://github.com/Vasysik/yt-dlp-host",
-      "description": "Simple dockerized API to work with yt-dlp from your server anywhere",
+      "description": "Self-hosted, Dockerized API for yt-dlp with async downloads, worker queues, quotas, JSON/SQLite storage, FFmpeg processing, and backward-compatible API support.",
       "stars": 30,
       "forks": 32,
       "language": "Python"
