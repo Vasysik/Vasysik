@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T22:35:44.186Z",
+  "generatedAt": "2026-08-21T22:44:40.826Z",
   "year": 2026,
   "user": {
     "login": "Vasysik",
@@ -1423,27 +1423,27 @@
     {
       "name": "Python",
       "bytes": 394069,
-      "percent": 37.00192301191741
+      "percent": 36.98754470110098
     },
     {
       "name": "JavaScript",
-      "bytes": 219904,
-      "percent": 20.648340463250566
+      "bytes": 220318,
+      "percent": 20.679175153227398
     },
     {
       "name": "Java",
       "bytes": 170731,
-      "percent": 16.03114002306112
+      "percent": 16.02491059779803
     },
     {
       "name": "TypeScript",
       "bytes": 126426,
-      "percent": 11.87103050152301
+      "percent": 11.866417623262405
     },
     {
       "name": "Kotlin",
       "bytes": 56275,
-      "percent": 5.284057404910441
+      "percent": 5.282004111093381
     }
   ],
   "repositories": [
