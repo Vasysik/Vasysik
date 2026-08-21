@@ -299,7 +299,7 @@ function renderWave(data, mode) {
 
   const days = data.calendar || [];
   const values = days.map(d => d.contributionCount || 0);
-  const chartX = 30, chartY = 58, chartW = 860, chartH = 96;
+  const chartX = 30, chartY = 58, chartW = 860, chartH = 100;
   for (let i = 0; i <= 5; i++) {
     const y = chartY + (chartH / 5) * i;
     s += `<line x1="${chartX}" y1="${y.toFixed(2)}" x2="${chartX + chartW}" y2="${y.toFixed(2)}" stroke="${c.grid}"/>`;
@@ -311,7 +311,7 @@ function renderWave(data, mode) {
     monthSeen.add(m);
     const name = new Date(day.date + 'T00:00:00Z').toLocaleString('en', { month: 'short', timeZone: 'UTC' });
     const px = chartX + (day.weekIndex || 0) * (chartW / Math.max(1, Math.max(...days.map(d => d.weekIndex || 0))));
-    s += `<text x="${px.toFixed(2)}" y="170" fill="${c.muted}" class="m small">${name}</text>`;
+    s += `<text x="${px.toFixed(2)}" y="168" fill="${c.muted}" class="m small">${name}</text>`;
   }
   if (values.length) {
     const d = buildWavePath(values, chartX, chartY + 4, chartW, chartH - 8);
@@ -321,9 +321,9 @@ function renderWave(data, mode) {
     s += `<text x="30" y="105" fill="${c.muted}" class="m body">signal will appear after the first successful data fetch</text>`;
   }
 
-  s += `<line x1="22" y1="182" x2="898" y2="182" stroke="${c.hair}"/>`;
-  s += `<text x="22" y="170" fill="${c.muted}" class="m small">range: Jan → now</text>`;
-  s += `<text x="898" y="170" text-anchor="end" fill="${c.text}" class="m small">peak daily count is derived from your contribution calendar</text>`;
+  s += `<line x1="22" y1="198" x2="898" y2="198" stroke="${c.hair}"/>`;
+  s += `<text x="22" y="188" fill="${c.muted}" class="m small">range: Jan → now</text>`;
+  s += `<text x="898" y="188" text-anchor="end" fill="${c.text}" class="m small">peak daily count is derived from your contribution calendar</text>`;
   return s + `</svg>`;
 }
 
