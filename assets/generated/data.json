@@ -1,35 +1,29 @@
 {
-  "generatedAt": "2026-08-25T18:58:17.640Z",
+  "generatedAt": "2026-08-26T01:27:55.619Z",
   "year": 2026,
   "range": {
-    "from": "2025-08-25T18:58:17.000Z",
-    "to": "2026-08-25T18:58:17.640Z"
+    "from": "2025-08-26T01:27:55.000Z",
+    "to": "2026-08-26T01:27:55.619Z"
   },
   "user": {
     "login": "Vasysik",
     "name": "Amadeus",
     "url": "https://github.com/Vasysik",
-    "repositories": 36,
+    "repositories": 37,
     "followers": 5
   },
   "totals": {
-    "contributions": 588,
-    "commits": 264,
-    "pullRequests": 11,
+    "contributions": 603,
+    "commits": 490,
+    "pullRequests": 15,
     "issues": 1,
     "reviews": 0,
-    "restricted": 294,
+    "restricted": 78,
     "stars": 32,
     "forks": 32
   },
-  "divergence": "0.081300",
+  "divergence": "1.011896",
   "calendar": [
-    {
-      "date": "2025-08-25",
-      "contributionCount": 10,
-      "weekday": 1,
-      "weekIndex": 0
-    },
     {
       "date": "2025-08-26",
       "contributionCount": 0,
@@ -2024,7 +2018,7 @@
     },
     {
       "date": "2026-07-24",
-      "contributionCount": 4,
+      "contributionCount": 5,
       "weekday": 5,
       "weekIndex": 47
     },
@@ -2096,7 +2090,7 @@
     },
     {
       "date": "2026-08-05",
-      "contributionCount": 0,
+      "contributionCount": 1,
       "weekday": 3,
       "weekIndex": 49
     },
@@ -2168,13 +2162,13 @@
     },
     {
       "date": "2026-08-17",
-      "contributionCount": 2,
+      "contributionCount": 5,
       "weekday": 1,
       "weekIndex": 51
     },
     {
       "date": "2026-08-18",
-      "contributionCount": 0,
+      "contributionCount": 2,
       "weekday": 2,
       "weekIndex": 51
     },
@@ -2186,13 +2180,13 @@
     },
     {
       "date": "2026-08-20",
-      "contributionCount": 0,
+      "contributionCount": 1,
       "weekday": 4,
       "weekIndex": 51
     },
     {
       "date": "2026-08-21",
-      "contributionCount": 0,
+      "contributionCount": 2,
       "weekday": 5,
       "weekIndex": 51
     },
@@ -2210,42 +2204,48 @@
     },
     {
       "date": "2026-08-24",
-      "contributionCount": 9,
+      "contributionCount": 12,
       "weekday": 1,
       "weekIndex": 52
     },
     {
       "date": "2026-08-25",
-      "contributionCount": 12,
+      "contributionCount": 16,
       "weekday": 2,
+      "weekIndex": 52
+    },
+    {
+      "date": "2026-08-26",
+      "contributionCount": 8,
+      "weekday": 3,
       "weekIndex": 52
     }
   ],
   "languages": [
     {
+      "name": "Dart",
+      "bytes": 1771963,
+      "percent": 50.64283736136163
+    },
+    {
       "name": "Python",
-      "bytes": 478537,
-      "percent": 38.473573472411715
-    },
-    {
-      "name": "Java",
-      "bytes": 260248,
-      "percent": 20.923503405271074
-    },
-    {
-      "name": "JavaScript",
-      "bytes": 220639,
-      "percent": 17.739006131980283
-    },
-    {
-      "name": "TypeScript",
-      "bytes": 126426,
-      "percent": 10.164438695070858
+      "bytes": 488774,
+      "percent": 13.969198108799205
     },
     {
       "name": "Kotlin",
-      "bytes": 56275,
-      "percent": 4.5244157654684365
+      "bytes": 411812,
+      "percent": 11.76961829307782
+    },
+    {
+      "name": "Java",
+      "bytes": 271060,
+      "percent": 7.7469154238382405
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 226457,
+      "percent": 6.4721582901798
     }
   ],
   "repositories": [
