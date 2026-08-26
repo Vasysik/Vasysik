@@ -116,6 +116,30 @@ const data = {
   repositories: topRepos
 };
 
+const dataUrl = new URL('../assets/generated/data.json', import.meta.url);
+
+function meaningfulData(data) {
+  const copy = structuredClone(data);
+  delete copy.generatedAt;
+  delete copy.range;
+  return copy;
+}
+
+let previousData = null;
+
+try {
+  previousData = JSON.parse(await fs.readFile(dataUrl, 'utf8'));
+} catch {}
+
+if (
+  previousData &&
+  JSON.stringify(meaningfulData(previousData)) ===
+    JSON.stringify(meaningfulData(data))
+) {
+  console.log('No meaningful profile changes');
+  process.exit(0);
+}
+
 await fs.mkdir(new URL('../assets/generated/', import.meta.url), { recursive: true });
 await fs.writeFile(new URL('../assets/generated/data.json', import.meta.url), JSON.stringify(data, null, 2) + '\n');
 
