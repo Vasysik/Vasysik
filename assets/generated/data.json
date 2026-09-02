@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-01T05:11:57.834Z",
+  "generatedAt": "2026-09-02T04:36:52.157Z",
   "year": 2026,
   "range": {
-    "from": "2025-09-01T05:11:57.000Z",
-    "to": "2026-09-01T05:11:57.834Z"
+    "from": "2025-09-02T04:36:52.000Z",
+    "to": "2026-09-02T04:36:52.157Z"
   },
   "user": {
     "login": "Vasysik",
@@ -24,12 +24,6 @@
   },
   "divergence": "0.432083",
   "calendar": [
-    {
-      "date": "2025-09-01",
-      "contributionCount": 0,
-      "weekday": 1,
-      "weekIndex": 0
-    },
     {
       "date": "2025-09-02",
       "contributionCount": 0,
@@ -2218,6 +2212,12 @@
       "date": "2026-09-01",
       "contributionCount": 0,
       "weekday": 2,
+      "weekIndex": 52
+    },
+    {
+      "date": "2026-09-02",
+      "contributionCount": 0,
+      "weekday": 3,
       "weekIndex": 52
     }
   ],
