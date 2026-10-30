@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-30T05:51:47.567Z",
+  "generatedAt": "2026-10-30T12:58:41.094Z",
   "year": 2026,
   "range": {
-    "from": "2025-10-30T05:51:47.000Z",
-    "to": "2026-10-30T05:51:47.567Z"
+    "from": "2025-10-30T12:58:41.000Z",
+    "to": "2026-10-30T12:58:41.094Z"
   },
   "user": {
     "login": "Vasysik",
@@ -13,16 +13,16 @@
     "followers": 5
   },
   "totals": {
-    "contributions": 559,
+    "contributions": 560,
     "commits": 478,
     "pullRequests": 12,
     "issues": 2,
-    "reviews": 0,
+    "reviews": 1,
     "restricted": 47,
-    "stars": 34,
+    "stars": 35,
     "forks": 35
   },
-  "divergence": "0.745743",
+  "divergence": "0.526303",
   "calendar": [
     {
       "date": "2025-10-30",
@@ -2216,7 +2216,7 @@
     },
     {
       "date": "2026-10-30",
-      "contributionCount": 2,
+      "contributionCount": 3,
       "weekday": 5,
       "weekIndex": 52
     }
@@ -2258,17 +2258,17 @@
       "language": "Python"
     },
     {
+      "name": "orex-ray",
+      "url": "https://github.com/Vasysik/orex-ray",
+      "description": "Cross-platform Xray client for Windows and Android with TUN VPN, system proxy, split tunneling, balancers, watchdog, diagnostics and secure profile storage.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Dart"
+    },
+    {
       "name": "yt-dlp-host-api",
       "url": "https://github.com/Vasysik/yt-dlp-host-api",
       "description": "A simple python library for sending requests to your yt-dlp-host API",
-      "stars": 1,
-      "forks": 0,
-      "language": "Python"
-    },
-    {
-      "name": "simple-rpi-fan",
-      "url": "https://github.com/Vasysik/simple-rpi-fan",
-      "description": "A Simple Fan Control Solution for Raspberry Pi",
       "stars": 1,
       "forks": 0,
       "language": "Python"
