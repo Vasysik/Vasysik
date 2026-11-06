@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-06T06:50:47.826Z",
+  "generatedAt": "2026-11-06T19:26:07.063Z",
   "year": 2026,
   "range": {
-    "from": "2025-11-06T06:50:47.000Z",
-    "to": "2026-11-06T06:50:47.826Z"
+    "from": "2025-11-06T19:26:07.000Z",
+    "to": "2026-11-06T19:26:07.063Z"
   },
   "user": {
     "login": "Vasysik",
     "name": "Amadeus",
     "url": "https://github.com/Vasysik",
     "repositories": 38,
-    "followers": 64
+    "followers": 68
   },
   "totals": {
     "contributions": 563,
@@ -19,10 +19,10 @@
     "issues": 2,
     "reviews": 1,
     "restricted": 48,
-    "stars": 37,
+    "stars": 38,
     "forks": 35
   },
-  "divergence": "1.014361",
+  "divergence": "0.967787",
   "calendar": [
     {
       "date": "2025-11-06",
@@ -2266,12 +2266,12 @@
       "language": "Dart"
     },
     {
-      "name": "Vasysik",
-      "url": "https://github.com/Vasysik/Vasysik",
-      "description": "",
+      "name": "KeyCursor",
+      "url": "https://github.com/Vasysik/KeyCursor",
+      "description": "Turn Android hardware keys into a real mouse and touch cursor with 8-way movement, drag, scrolling, cursor customization, and landscape-aware controls.",
       "stars": 1,
-      "forks": 0,
-      "language": "JavaScript"
+      "forks": 1,
+      "language": "Java"
     }
   ]
 }
