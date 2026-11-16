@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-11-16T06:33:06.609Z",
+  "generatedAt": "2026-11-16T22:05:34.718Z",
   "year": 2026,
   "range": {
-    "from": "2025-11-16T06:33:06.000Z",
-    "to": "2026-11-16T06:33:06.609Z"
+    "from": "2025-11-16T22:05:34.000Z",
+    "to": "2026-11-16T22:05:34.718Z"
   },
   "user": {
     "login": "Vasysik",
     "name": "Amadeus",
     "url": "https://github.com/Vasysik",
     "repositories": 38,
-    "followers": 108
+    "followers": 109
   },
   "totals": {
-    "contributions": 589,
+    "contributions": 591,
     "commits": 479,
-    "pullRequests": 22,
-    "issues": 9,
+    "pullRequests": 23,
+    "issues": 10,
     "reviews": 2,
     "restricted": 58,
-    "stars": 40,
+    "stars": 42,
     "forks": 35
   },
-  "divergence": "1.365040",
+  "divergence": "0.300464",
   "calendar": [
     {
       "date": "2025-11-16",
@@ -2216,7 +2216,7 @@
     },
     {
       "date": "2026-11-16",
-      "contributionCount": 0,
+      "contributionCount": 2,
       "weekday": 1,
       "weekIndex": 52
     }
@@ -2258,20 +2258,20 @@
       "language": "Python"
     },
     {
-      "name": "Vasysik",
-      "url": "https://github.com/Vasysik/Vasysik",
-      "description": "",
-      "stars": 2,
-      "forks": 0,
-      "language": "JavaScript"
-    },
-    {
       "name": "orex-ray",
       "url": "https://github.com/Vasysik/orex-ray",
       "description": "Cross-platform Xray client for Windows and Android with TUN VPN, system proxy, split tunneling, balancers, watchdog, diagnostics and secure profile storage.",
-      "stars": 2,
+      "stars": 3,
       "forks": 0,
       "language": "Dart"
+    },
+    {
+      "name": "KeyCursor",
+      "url": "https://github.com/Vasysik/KeyCursor",
+      "description": "Turn Android hardware keys into a real mouse and touch cursor with 8-way movement, drag, scrolling, cursor customization, and landscape-aware controls.",
+      "stars": 2,
+      "forks": 1,
+      "language": "Java"
     }
   ]
 }
